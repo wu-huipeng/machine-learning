@@ -1,3 +1,5 @@
+## 最小二成法求解
+
 import matplotlib.pyplot as plt
 
 def main():
@@ -27,3 +29,34 @@ def main():
     plt.show()
 if __name__ == '__main__':
     main()
+
+    
+## 梯度下降法求解
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # 样本x
+y = [1.1, 2.5, 3.2, 4.6, 5.1, 5.4, 6.7, 6.7, 8.1]  # 样本y
+#   拟和方程为： y = 0.8*x + 0.8
+w = 5    #随机初始化w
+b = 3      #随机初始化b
+loss = 0
+
+for i in range(1000):    #更新w，b的次数
+    if loss < 0.001:
+        break
+    w_D = 0
+    b_D = 0
+    loss = 0
+    for a in range(len(x)):
+        loss += (y[a] - (w*x[a]+b))**2    
+
+
+        w_D -=(y[a]-(w*x[a]+b))*x[a]   #得到函数对w的偏导数值
+        b_D +=w*x[a] + b - y[a]          #得到函数对b的偏导数值
+    print('loss:%.2f'%loss)
+
+    w = w - 0.002*w_D     #更新w   0.002为学习率
+    b = b - 0.002*b_D     #更新b
+
+    print('w:%.2f'%w)
+    print('b:%.2f'%b)
