@@ -1,3 +1,4 @@
+## 源码实现
 import matplotlib.pyplot as plt                                                                
 import math                                                                                    
                                                                                                
@@ -39,3 +40,22 @@ def main():
     print("%.2f"%a)                                                                            
 if __name__ == '__main__':                                                                     
     main()    
+
+### sklearn实现
+
+from sklearn.datasets import make_classification
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+
+x , y = make_classification(n_samples=5000,n_features=20,random_state=123)
+
+x_train,x_test,y_train,y_test = train_test_split(x,y,random_state=123)
+
+linear = LogisticRegression()
+
+linear.fit(x_train,y_train)
+
+y_pred = linear.predict(x_test)
+
+print(y_pred[:20])
+print(y_test[:20])
