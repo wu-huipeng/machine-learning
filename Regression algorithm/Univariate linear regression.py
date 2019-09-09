@@ -60,3 +60,24 @@ for i in range(1000):    #更新w，b的次数
 
     print('w:%.2f'%w)
     print('b:%.2f'%b)
+    
+## sklearn实现
+
+from sklearn.datasets import make_regression
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+import numpy as np
+
+x , y = make_regression(n_samples=5000,n_features=10,random_state=42)
+
+x_train,x_test,y_train,y_test = train_test_split(x,y,random_state=123)
+
+
+linear = LinearRegression()
+
+linear.fit(x_train,y_train)
+
+y_pred = linear.predict(x_test)
+
+loss = np.sum((y_test - y_pred)**2)   
+print(loss)
