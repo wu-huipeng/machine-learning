@@ -5,3 +5,4 @@
 2. [逻辑回归](https://github.com/wu-huipeng/machine-learning/blob/master/Regression%20algorithm/Logical%20regression.py).
 
 二. [KNN](https://github.com/wu-huipeng/machine-learning/tree/master/KNN).
+1. [sklearn库实现](https://github.com/wu-huipeng/machine-learning/edit/master/KNN/sklearn%20API.py).
