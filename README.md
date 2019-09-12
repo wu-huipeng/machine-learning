@@ -7,4 +7,4 @@
 二. [KNN](https://github.com/wu-huipeng/machine-learning/tree/master/KNN).
 1. [sklearn库实现](https://github.com/wu-huipeng/machine-learning/edit/master/KNN/sklearn%20API.py).
 2. [自己实现KNN](https://github.com/wu-huipeng/machine-learning/blob/master/KNN/knn.py).
-3. [KNN文档](https://github.com/wu-huipeng/machine-learning/blob/master/KNN/knn.py).
+3. [KNN文档](https://github.com/wu-huipeng/machine-learning/blob/master/KNN/KNN.md).
