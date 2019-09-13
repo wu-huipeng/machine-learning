@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
-data = pd.read_csv('train.csv')    #读取数据
+data = pd.read_csv('MNIST.csv')    #读取数据
 
 label = data['label'].values     #得到标签
 
