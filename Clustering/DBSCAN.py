@@ -1,7 +1,7 @@
 import numpy as np
 import math
 import random
-
+from sklearn.datasets import make_circles
 #记录那些点是遍历过的，那些点是未遍历过的
 class visited():
     def __init__(self,count=0):
@@ -50,5 +50,18 @@ a = DBSCAN(x,0.1,10)
 print(a)
 
 ##  sklearn API
+from sklearn.cluster import DBSCAN
+from sklearn.datasets import make_circles
+
+x,y = make_circles(n_samples=2550)
+
+a = DBSCAN(eps=0.1,min_samples=10)
+
+a.fit(x)
+
+pred = a.labels_
+
+print(pred)  
+print(y)
 
           
