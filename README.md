@@ -15,5 +15,5 @@
 2. [Kmeans聚类](https://github.com/wu-huipeng/machine-learning/blob/master/Clustering/Kmeans.py).
 3. [DBSCAN](https://github.com/wu-huipeng/machine-learning/blob/master/Clustering/DBSCAN.py).
 
-四. [支持向量机]
+四. [支持向量机](https://github.com/wu-huipeng/machine-learning/tree/master/SVM).
 1. [SVM文档](https://github.com/wu-huipeng/machine-learning/blob/master/SVM/SVM.md).
